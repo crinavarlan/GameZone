@@ -145,7 +145,7 @@ img {
 /*--new games--*/
 
 .new-grid{
-  margin-top:30px;
+  margin-top:40px;
 }
 .view {
     overflow: hidden;
@@ -256,6 +256,46 @@ img {
     55%, 75%, 87%, 97%, 100% { transform: translateY(0px);}
 }
 
+/*-- footer --*/
+.footer{
+  padding:35px 0px;
+}
+.footer h4{
+  text-align:left;
+  color:#000;
+  font-size:27px;
+  margin-bottom:30px;
+}
+.footer-left ul li{
+  display:inline-block;
+  margin-bottom:35px;
+}
+.footer-left .glyphicon{
+  font-size:16px;
+}
+.footer-left ul li h6{
+  font-size:16px;
+  color:#000;
+  margin-left:10px;
+}
+.footer-left ul li a{
+  font-size:14px;
+  color:#000;
+}
+.footer-middle-three{
+  margin-top:25px;
+}
+.footer-right h4{
+  color: #0a7765; }
+.footer-right img {
+    width: 12%;
+}
+
+.footer-right p{
+  font-size:14px;
+  color:#000;
+  line-height:30px;
+}
 
 
 
@@ -267,15 +307,60 @@ img {
 
 
 
-/*-- responsive--*/
 
-@media screen and (max-width: 1080px){
-  .view .mask, .view .content {
-    width: 87%;
-    padding: 5.5em 0;
+
+ /*-- responsive--*/
+
+@media screen and (max-width: 991px){
+  .navbar-header h1 {
+    margin-top:7px;
+    font-size: 35px;
   }
+  .navbar-header img {
+    width: 18%;
+  }
+  .navbar-nav>li {
+    padding: 5px 8px;
+  }
+  .view .mask, .view .content {
+    width: 83%;
+    padding: 50px 0;
+  }
+  .view h4 {
+    font-size: 1.8em;
+  }
+  .view p {
+    font-size: 12px;
+  }
+  .footer-left,.footer-middle,.footer-right {
+    width: 33.3%;
+    float: left;
+  }
+  .footer-middle{
+    padding:0;
+  }
+  .img-agile{
+    width:25%;
+    float:left;
+    padding:0px 3px;
+  }
+  .footer-middle-three {
+    margin-top: 7px;
+  }
+  .footer-left ul li {
+    margin-bottom: 22px;
+  }
+  .footer-right p {
+    font-size: 13px;
+    line-height: 25px;
+  }
+ 
+  .footer-right img {
+    width: 16%;
+  }
+ 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 736px){
   
   .navbar-header h1 {
     text-align: left;
@@ -283,10 +368,10 @@ img {
   }
   .navbar-default .navbar-toggle {
     background: transparent;
-    border: 2px solid #0F947E;
+    border: 2px solid #E91E63;
   }
   .navbar-default .navbar-toggle .icon-bar {
-    background-color: #0F947E;
+    background-color: #E91E63;
   }
   .navbar-toggle {
     border-radius: 0px;
@@ -299,6 +384,111 @@ img {
   }
   .navbar-nav {
     margin: 0;
-    background: #0A7765;
+    background: #02178e;
+  }
+  .navbar-collapse.in {
+    overflow-y: inherit;
+  }
+  .view .mask, .view .content {
+    padding: 45px 0;
+  }
+ 
+}
+@media screen and (max-width:667px){
+  .callbacks_nav {
+    height: 61px;
+    width: 32px;
+    background-size: 58px;
+  }
+ 
+  .view .mask, .view .content {
+    padding: 37px 0;
+    width:87%;
+  }
+  .footer-left-w3 ul li h6 {
+    font-size: 15px;
+    margin-left: 5px;
+  } 
+}
+@media screen and (max-width:640px){
+  .footer-left ul li h6 {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  .footer-left .glyphicon {
+    font-size: 15px;
+  }
+  .footer h4 {
+    font-size: 24px;
+  }
+  
+}
+@media screen and (max-width:600px){
+  .view {
+    margin-top: 1em;
+  }
+  .view .mask, .view .content {
+    padding: 37px 0;
+    width: 93%;
+  }
+  .footer-left-, .footer-middle, .footer-right {
+    width: 100%;
+    float: left;
+  }
+  .footer-middle{
+    margin:30px 0;
+  }
+  .footer h4 {
+    margin-bottom: 20px;
+  }
+  .footer-right h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-right img {
+    width: 7%;
+  }
+ 
+@media screen and (max-width:568px){
+  .view h4 {
+    font-size: 2.2em;
+  }
+  .view p {
+    font-size: 14px;
+  }
+  .view .mask, .view .content {
+    padding: 83px 0;
+    width: 94.5%;
+  }
+ 
+@media screen and (max-width:480px){
+  .callbacks_nav {
+    top: 60%;
+  }
+  .navbar-header h1 {
+    font-size: 27px;
+  }
+  .navbar-header img {
+    width: 8%;
+  }
+  .view .mask, .view .content {
+    padding: 67px 0;
+    width: 93.5%;
+  }
+  
+@media screen and (max-width:414px){
+  .navbar-header img {
+    width: 10%;
+  }
+  .view .mask, .view .content {
+    padding: 49px 0;
+    width: 93%;
+  }
+  .view h4 {
+    font-size: 2em;
+  }
+ 
+  .footer-right-w3 img {
+    width: 9%;
   }
 }
