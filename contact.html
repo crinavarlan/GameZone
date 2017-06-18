@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GamesZone |Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />  
+<!-- font -->
+<link href='//fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- script-->
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/bootstrap.js"></script>
+</head>
+<body> 
+<!-- banner -->
+<div class="sub-banner">
+        <!-- Navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a  href="index.html"><h1>Games <img src="images/logo.png" alt=" " /> Zone</h1></a>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hover_effect"><a href="index.html">Home</a></li>
+                        <li class="hover_effect"><a href="games.html">Games</a></li>
+                        <li class="hover_effect"><a href="rent.html">Rent</a></li>
+                        <li class="hover_effect active"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+</div>
+            
+<!--contact-->
+        <div class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                  <div class="col-sm-6 col-xs-12 contact-left">
+                      <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2301.4326422491017!2d-1.5836516841073047!3d54.77236148030246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e875fd3923eef%3A0x112a300deb7ffe37!2s2+Grove+St%2C+Durham+DH1+4QW!5e0!3m2!1sen!2suk!4v1497688448868" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                  </div>
+                  <div class="col-sm-6 col-xs-12 contact-right">
+                      <div class="adress">
+                          <ul>
+                            <li>2 Grove St, Durham</li>
+                            <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></li>
+                            <li><h6>+4407542154544</h6></li>
+                          </ul>
+                      <div class="clearfix"></div>
+                      </div>
+        <div class="form-details">
+            <form> 
+              <label for="contact-name"></label>
+              <input type="text" class="name-con" id="contact-name" name="name" placeholder="Name" onkeyup='validateName()'>
+              <span class='error-message' id='name-error'></span>
+        
+              <label for="contact-phone"></label>
+              <input type="tel" class="tel-con" id="contact-phone" name="phone" placeholder="Telephone number" onkeyup='validatePhone()'>
+              <span class='error-message' id='phone-error'></span>
+        
+              <label for="contact-email"></label>
+              <input type="email" class="email-con" id="contact-email" name="email" placeholder="Email" onkeyup='validateEmail()'>
+              <span class='error-message' id='email-error'></span>
+
+              <label for='contactMessage'></label>
+              <textarea class="contact-area" id='contact-message'  name='message'  placeholder="Enter a message" onkeyup='validateMessage()'></textarea>
+              <span class='error-message' id='message-error'></span></form><br>
+
+              <button onclick='return validateForm()' class="btn btn-default btn-contact">Submit</button>
+              <span class='error-message' id='submit-error'></span>
+            </form>
+
+                  </div>
+                  </div>
+                      <div class="clearfix"></div>
+
+<!-- footer -->
+<div class="footer">
+  <div class="container">
+    <div class="col-md-3 footer-left">
+      <h4>Contact</h4>
+      <ul>
+        <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></li>
+        <li><a href="mailto:example@mail.com"><h6>info@gamezone.com</h6></a></li>
+      </ul>
+      <ul>
+        <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span></li>
+        <li><h6>+4407542154544</h6></li>
+      </ul>
+      <ul>
+        <li><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span></li>
+        <li><h6>2 Grove St, Durham</h6></li>
+      </ul>
+      <ul>
+        <li><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span></li>
+        <li><h6>(0044)1245 5425 547</h6></li>
+      </ul>
+
+    </div>
+
+    <div class="col-md-5 footer-middle">
+      <h4>Latest Games</h4>
+      <div class="col-md-3 img-agile">
+        <a href="#"><img src="images/late_night_in_the_woods.jpg" alt="NIGHT IN THE WOODS"/></a>
+      </div>
+      <div class="col-md-3 img-agile">
+        <a href="#"><img src="images/late_project-cars-2.jpg" alt="PROJECT CAR 2"/></a>
+      </div>
+      <div class="col-md-3 img-agile">
+        <a href="#"><img src="images/late_Far-Cry-Primal.jpg" alt="Far Cry Primal" /></a>
+      </div>
+      <div class="col-md-3 img-agile">
+        <a href="#"><img src="images/late_rime.jpg" alt="Rime"/></a>
+      </div>
+      <div class="col-md-3 img-agile footer-middle-three">
+        <a href="#"><img src="images/late_prey.jpg" alt="Prey 2017"/></a>
+      </div>
+      <div class="col-md-3 img-agile footer-middle-three">
+        <a href="#"><img src="images/late_for_honor.jpg" alt="For Honor"/></a>
+      </div>
+      <div class="col-md-3 img-agile footer-middle-three">
+        <a href="#"><img src="images/late_yooka_laylee.jpg" alt="Yooka-Laylee" /></a>
+      </div>
+      <div class="col-md-3 img-agile footer-middle-three">
+        <a href="#"><img src="images/late_dawn_of_war.jpg" alt="Dawn of War III" /></a>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <div class="col-md-4 footer-right">
+      <a href="/"><h4>Games <img src="images/logo2.png" alt="logo xbox" /> Zone</h4></a>
+      <p>Game Zone is a multi-format gaming site aiming to bring for you  previews, features, news, reviews, and possibility to rent and enjoy your favorite games</p>
+    </div>
+  </div>
+</div>
+    <div class="clearfix"></div>
+
+  <!-- Custom scripts -->
+    <script src="js/script.js"></script>  
+    
+  <!-- Scripts vendors-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <!-- Google Maps scripts -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCi5i92bOJeQWjkT88hbZHm0c0zdC0nq6o&callback=initMap" async defer></script>
+
+    
+</body>
+</html>
+            
+           
