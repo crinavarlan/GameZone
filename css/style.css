@@ -26,6 +26,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing:1px;
 }
+.title {
+  margin: 30px;
+}
 p {
   margin:0;
 }
@@ -44,7 +47,7 @@ img {
   width: 100%;
 }
 
-/*-- Navbar --*/
+/*-- NAVBAR --*/
 .navbar {
   margin-bottom: 0;
   position: absolute;
@@ -68,18 +71,21 @@ img {
 .navbar-default .navbar-nav>li>a {
   color: #fff;
 }
-.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:focus {
   color: #fff;
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #fff;
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #279198;
     background-color: transparent;
 }
 .sub-banner{
     background:url(../images/slider1.jpg) no-repeat 0px 0px;
     min-height:87px;
     }
-/*-- Link-Hover-Effect --*/
+/*-- Hover Effect - NAVBAR--*/
 .hover_effect a {
   padding: 10px;
   color: #237546;
@@ -131,7 +137,8 @@ img {
   -moz-transform: translateY(0px);
   transform: translateY(0px);
 }
-/*--new games--*/
+
+/*--New Games--*/
 .new-grid-agile{
   margin-top:30px;
 }
@@ -247,53 +254,13 @@ img {
     92% { transform: translateY(-12px);}
     55%, 75%, 87%, 97%, 100% { transform: translateY(0px);}
 }
-/*-- footer --*/
-.footer{
-  padding:35px 0px;
-}
-.footer h4{
-  text-align:left;
-  color:#279198;
-  font-size:27px;
-  margin-bottom:30px;
-}
-.footer-left ul li{
-  display:inline-block;
-  margin-bottom:35px;
-}
-.footer-left .glyphicon{
-  font-size:16px;
-}
-.footer-left ul li h6{
-  font-size:16px;
-  color:#000;
-  margin-left:10px;
-}
-.footer-left ul li a{
-  font-size:14px;
-  color:#000;
-}
-.footer-middle-three{
-  margin-top:25px;
-}
-.footer-right img {
-    width: 12%;
-}
-.footer-right p{
-  font-size:14px;
-  color:#000;
-  line-height:30px;
-}
 
-/*games*/
+
+     /*--GAMES-*/
+ /*-- Trending Games--*/
 
 .gallery-grids {
     margin: 3em 0 0;
-}
-.gallery-layouts h2{
-    font-size:40px;
-    color:#279198;
-    margin-top:40px;
 }
 .gallery-grid{
   float:left;
@@ -338,38 +305,8 @@ img.zoom-img:hover{
   -o-transition-duration: 750ms;
   overflow: hidden;
 }
-/*-- games --*/
-/*--Trailers--*/
-.trailers {
-  padding: 4em 0 0 0;
-}
-.content-grid img {
-    width: 100%;
-}
-.content-grid {
-    width:25%;
-    float: left;
-    text-align: center;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.35);
-    margin-right: 0%;
-    margin-bottom: 2%;
-    position: relative;
-  padding-left: 0;
-}
-.content-grid h3 {
-      color: #fff;
-    padding: 0.2em 1em 0.6em 1em;
-    display: block;
-    line-height: 1.8em;
-    font-size: 0.9em;
-    font-family: 'OpenSans-Regular';
-}
-.content-grid ul li a {
-    padding: 0 5px;
-    display: block;
-    color: #e3b23f;
-    font-size: 1.1em;
-}
+/*--Trailers - GAMES--*/
+
 .button {
     transition: 0.5s ease;
     -o-transition: 0.5s ease;
@@ -378,46 +315,181 @@ img.zoom-img:hover{
     text-transform: uppercase;
     display: block;
     margin: 10px 0 0 0;
-    font-size: 1em;
-  font-weight:600;
+    font-size: 1em;    
 }
 .button:hover {
-    color:#EA57A3;
+    color:#279198;
 }
-.inner-info {
-    display: none;
+
+.page {
+    position: relative;
+    height:100%;
 }
-.content-grid:hover{
-    display:block;
-    -o-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    position: absolute;
-    bottom: 0px;
-    background: #EA57A3;
-    padding: 10px 10px;
-    width:227px;
-    border-radius:0px 0px 4px 4px;
-  -webkit-border-radius:0px 0px 4px 4px;
-  -moz-border-radius:0px 0px 4px 4px;
-  -o-border-radius:0px 0px 4px 4px;
+
+/*-- New-trailers - Pop up!!!!!NOT WORKING--*/
+.popup {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  max-height: 480px;
+  padding: 20px;
+  border: 1px solid black;
+  background: black;
+  color: white;
+  vertical-align: middle;
+  display: none;
 }
-h3.title {
-    float: left;
-    font-size: 1.8em;
-    font-weight:700;
-    color: #444;
+.show-popup .popup {
+    opacity:1;
+    visibility: visible;
+    display: flex;   
 }
- /*-- Pop up trailer--*/
+iframe {
+  width: 100%;
+}
+
+#media-popup,
+#media-popup2,
+#media-popup3,
+#media-popup4,
+#media-popup5,
+#media-popup6{
+  background: #FFF;
+  padding:20px;
+  text-align: left;
+  max-width: 700px;
+  margin: 40px auto;
+  position: relative;
+  text-align:center;
+}
 
 
+  /*for close button, video pop up*/
+/*.popup__overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(53, 36, 22, .95);
+  text-align: center;
+  z-index: 100;
+}
 
-/* Contact */
+.popup__overlay:after {
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  vertical-align: middle;
+  content: '';
+}
+.popup__close {
+  display: block;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 12px;
+  height: 12px;
+  padding: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(53, 36, 22, .95);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.popup__close:hover {
+  color: #eea200;
+}*/
+
+   /*RENT IT*/
+
+.rent-info-section{
+  background: #f4f4f4;
+  padding:50px 0px;
+}
+
+.rent li{
+  margin-bottom: 2%;
+  margin-left: 5%; 
+}
+ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.thumb{
+  padding:20px 0px 0px 70px;
+  float: left;
+  width: 30%;
+  margin: 0.5%;
+} 
+.thumb-details{
+  padding-top:30px;
+  float: left;
+  width: 63%;
+}
+.thumb-details h4{
+  color: #279198;
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.thumb-details p{
+  color: #333;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.rent-button{
+  color: #fff;
+  font-size: 13px;
+  padding:5px  12px;
+  background: #279198;
+  cursor: pointer;
+}
+.rent-button:hover{
+  background:#111;
+  color: #fff;
+}
+ /*--Rent info bar--*/
+.item_info {
+    border: 1px solid #ddd;
+    padding: 0.5em 1.5em;
+    margin: 2em 0;
+}
+.item_info ul li i {
+   color:#8a8a8a;
+    margin-right: 15px;
+}
+.item_info ul li {
+    display: inline-block;
+    font-size: 1.1em;
+    margin-right: 27px;
+    vertical-align: middle;
+    color: #777;
+    list-style: none;
+}
+.item_info ul li  a{
+  color: #777;
+  transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+/* CONTACT */
+
 .contact{
     padding: 3em 0;
-}.contact h2{
+}
+.contact h2{
     text-align: left;
     padding:0px 0px 20px 200px;
     color: #279198
@@ -480,8 +552,45 @@ textarea.contact-area{
     color: #fff;
     transition: 0.5s all; 
 }
+/*-- FOOTER --*/
+.footer{
+  padding:35px 0px;
+}
+.footer h4{
+  text-align:left;
+  color:#279198;
+  font-size:27px;
+  margin-bottom:30px;
+}
+.footer-left ul li{
+  display:inline-block;
+  margin-bottom:35px;
+}
+.footer-left .glyphicon{
+  font-size:16px;
+}
+.footer-left ul li h6{
+  font-size:16px;
+  color:#000;
+  margin-left:10px;
+}
+.footer-left ul li a{
+  font-size:14px;
+  color:#000;
+}
+.footer-middle-three{
+  margin-top:25px;
+}
+.footer-right img {
+    width: 12%;
+}
+.footer-right p{
+  font-size:14px;
+  color:#000;
+  line-height:30px;
+}
 
-/*Social Media*/
+/*SOCIAL MEDIA*/
 .social-media {
     text-align: left;
 
@@ -535,7 +644,7 @@ textarea.contact-area{
     background-position: -230px -42px;
 }
 
-/*-- responsive--*/
+/*-- RESPONSIVE--*/
 @media screen and (max-width: 991px){
   .navbar-header h1 {
     margin-top:7px;

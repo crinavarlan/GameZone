@@ -94,17 +94,29 @@ function producePrompt(message, promptLocation, color) {
   document.getElementById(promptLocation).innerHTML = message;
   document.getElementById(promptLocation).style.color = color;
 }
+
+
+
 /* popup video in games*/
-$(document).ready(function() {
-                  $('.popup-with-zoom-anim').magnificPopup({
-                    type: 'inline',
-                    fixedContentPos: false,
-                    fixedBgPos: true,
-                    overflowY: 'auto',
-                    closeBtnInside: true,
-                    preloader: false,
-                    midClick: true,
-                    removalDelay: 300,
-                    mainClass: 'my-mfp-zoom-in'
-                  });
-                  });
+$("[data-media]").on("click", function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var videoUrl = $this.attr("data-media");
+    var popup = $this.attr("href");
+    var $popupIframe = $(popup).find("iframe");
+    
+    $popupIframe.attr("src", videoUrl);
+    
+    $this.closest(".page").addClass("show-popup");
+});
+
+$(".popup").on("click", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    $(".page").removeClass("show-popup");
+});
+
+$(".popup > iframe").on("click", function(e) {
+    e.stopPropagation();
+});
