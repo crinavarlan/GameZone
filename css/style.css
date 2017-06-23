@@ -78,7 +78,7 @@ img {
 .navbar-default .navbar-nav > .active > a, 
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #279198;
+    color: #140718;
     background-color: transparent;
 }
 .sub-banner{
@@ -645,6 +645,26 @@ textarea.contact-area{
 }
 
 /*-- RESPONSIVE--*/
+
+@media screen and (max-width: 1080px){
+  .thumb h4 {
+    width: 32%;
+  }
+  .thumb{
+    float: left;
+    padding-left: 10px;
+
+  }
+  .item_info {
+    margin: 1.2em 0;
+  }
+  .item_info ul li {
+    margin-right: 18px;
+  }
+  .rent-button {
+    margin-top:12px;
+  }
+
 @media screen and (max-width: 991px){
   .navbar-header h1 {
     margin-top:7px;
@@ -674,6 +694,46 @@ textarea.contact-area{
   .view p {
     font-size: 12px;
   }
+  .map iframe {
+    width: 100%;
+    height: 350px;
+  }
+  .rent-info-section {
+    float: left;
+  }
+  .thumb-details {
+    width: 66.6%;
+    float: left;
+    padding-left: 0;
+  }
+  .item_info {
+    padding: 0.5em;
+  }
+  .item_info ul li {
+    font-size: 1em;
+    margin-right: 16px;
+  }
+  .item_info ul li i {
+    margin-right: 5px;
+  }
+  .thumb-details h4 {
+    font-size: 30px;
+  }
+  .thumb-details p {
+    font-size: 13px;
+    line-height: 26px;
+  }
+  .thumb img {
+    width: 100%;
+  }
+  .item_info {
+    margin: 1em 0;
+  }
+  .blog-text-w3ls p {
+    font-size: 13px;
+    line-height: 26px;
+  }
+ 
   .footer-left,
   .footer-middle,
   .footer-right {
@@ -696,6 +756,15 @@ textarea.contact-area{
   .footer-right img {
     width: 16%;
   } 
+}
+@media screen and (max-width: 900px){
+
+  .thumbs-details {
+    padding: 20px 0px 0px 20px;
+  }
+  .events-text-w3-agile p {
+    font-size: 21px;
+  }
 }
 @media screen and (max-width: 736px){
   
@@ -751,6 +820,31 @@ textarea.contact-area{
     font-size:25px;
   }
 }
+  @media screen and (max-width: 736px){
+ 
+  .navbar-default .navbar-toggle {
+    background: transparent;
+    border: 2px solid 279198;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: 279198;
+  }
+  .navbar-toggle {
+    border-radius: 0px;
+  }
+  .navbar-default .navbar-toggle:hover, 
+  .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+  } 
+  
+  .navbar-collapse.in {
+    overflow-y: inherit;
+  }
+  .item_info ul li {
+    margin-right: 14px;
+    font-size: 12px;
+  }
+}
 @media screen and (max-width:640px){
   .footer-left ul li h6 {
     font-size: 14px;
@@ -762,6 +856,9 @@ textarea.contact-area{
   .footer h4 {
     font-size: 24px;
   }
+  .item_info ul li {
+    font-size: 12px;
+    margin-right: 12px;
 }
 @media screen and (max-width:600px){
   .footer-left, .footer-middle, .footer-right {
@@ -776,6 +873,10 @@ textarea.contact-area{
   }
   .footer-right h4 {
     margin-bottom: 10px;
+  }
+  .item_info ul li {
+    font-size: 12px;
+    margin-right: 5px;
   }
 }
 
@@ -798,6 +899,15 @@ textarea.contact-area{
     padding: 83px 0;
     width: 94.5%;
   }
+  .item_info ul li {
+    font-size: 11px;
+    margin-right: 6px;
+  }
+  .map iframe {
+    width: 100%;
+    height: 270px;
+  }
+}
 
 @media screen and (max-width:480px){
   .callbacks_nav {
@@ -817,6 +927,32 @@ textarea.contact-area{
     float: left;
     width: 50%;
   }
+  .rent-info-section {
+    width: 100%;
+    float: left;
+    min-height:310px;
+  }
+  .thumb {
+    width: 100%;
+    float: left;
+  }
+  .thumb-details {
+    width: 100%;
+    float: left;
+    padding-left: 15px;
+  }
+  .thumb-details h4 {
+    font-size: 20px;
+  }
+  .map iframe {
+    width: 100%;
+    height: 250px;
+  }
+  .contact h2 {
+    font-size: 25px;
+    float: left;
+    padding-left: 15px;
+  }
 @media screen and (max-width:414px){
   .navbar-header img {
     width: 10%;
@@ -827,5 +963,11 @@ textarea.contact-area{
   }
   .view h4 {
     font-size: 2em;
+  }
+  .sub-banner {
+    min-height: 72px;
+  }
+  .thumb-details h4 {
+    width: 36%;
   }
 }
