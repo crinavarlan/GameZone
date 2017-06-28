@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GamesZone |Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/form_rent.css" rel="stylesheet" type="text/css" media="all" />  
+<!-- font -->
+<link href='//fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+
+</head>
+<body> 
+
+        <div class="rent-form">
+            <div class="container">
+                <h2>Contact Us</h2>
+                  <div class="messagepop pop">
+                    <form method="post" id="new_message" action="/messages">
+                      <label for="contact-name"></label>
+                      <input type="text" class="name-con" id="contact-name" name="name" placeholder="Name" onkeyup='validateName()'>
+                      <span class='error-message' id='name-error'></span>
+        
+                      <label for="contact-phone"></label>
+                      <input type="tel" class="tel-con" id="contact-phone" name="phone" placeholder="Telephone number" onkeyup='validatePhone()'>
+                      <span class='error-message' id='phone-error'></span>
+        
+                      <label for="contact-email"></label>
+                      <input type="email" class="email-con" id="contact-email" name="email" placeholder="Email" onkeyup='validateEmail()'>
+                      <span class='error-message' id='email-error'></span>
+
+                      <label for='contactMessage'></label>
+                      <textarea class="contact-area" id='contact-message'  name='message'  placeholder="Enter a message" onkeyup='validateMessage()'></textarea>
+                      <span class='error-message' id='message-error'></span></form><br>
+
+                      <button onclick='return validateForm()' class="btn btn-default btn-contact">Submit</button>
+                      <span class='error-message' id='submit-error'></span>
+                  </form>
+
+                  </div>
+            </div>
+                      <div class="clearfix"></div>
+</div>
+  <!-- Custom scripts -->
+    <script src="js/script.js"></script>  
+    
+  <!-- Scripts vendors-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
+            
+           
