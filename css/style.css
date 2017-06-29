@@ -306,82 +306,7 @@ img.zoom-img:hover{
   overflow: hidden;
 }
 
-/*--Img effect--*/
-
-
-figure.image-effect img {
-
-  -webkit-transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, transform 1s;
-  width: 100%;
-}
-
-figure.image-effect figcaption {
-  text-align: left;
-}
-
-figure.image-effect p {
-    margin: 0 0 0 0.4em;
-    padding: 0.5em 1em;
-    background: #6E6E6E;
-    color: #fff;
-    font-size: 75%;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(-2180px,0,0);
-    transform: translate3d(-2180px,0,0);
-}
-figure.image-effect h4 {
-    position: relative;
-    padding-top: 10px;
-    font-size: 1.5em;
-    letter-spacing: 1.5px;
-    }
-
-figure.image-effect p:first-child {
-  -webkit-transition-delay: 0.15s;
-  transition-delay: 0.15s;
-}
-
-figure.image-effect p:nth-of-type(2) {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-
-figure.image-effect p:nth-of-type(3) {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
-}
-
-figure.image-effect:hover p:first-child {
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
-}
-
-figure.image-effect:hover p:nth-of-type(2) {
-  -webkit-transition-delay: 0.05s;
-  transition-delay: 0.05s;
-}
-
-figure.image-effect:hover p:nth-of-type(3) {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-
-figure.image-effect:hover img {
-  -webkit-transform: scale3d(1.1,1.1,1);
-  transform: scale3d(1.1,1.1,1);
-}
-
-figure.image-effect:hover p {
-  opacity: 1;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-
 /*--Trailers - GAMES--*/
-
 /*--video--*/
 .video iframe {
     border: none;
@@ -757,7 +682,7 @@ textarea.contact-area{
   .footer-right img {
     width: 16%;
   }
-  
+
 }
 @media screen and (max-width: 736px){
   
@@ -878,9 +803,7 @@ textarea.contact-area{
     padding: 30px 0px;
     margin-bottom: 30px;
   }
-  .gallery-grids {
-    margin:0;
-  }
+  
    .gallery-layouts h2 {
     font-size: 28px;
     margin: 10px 30px;
