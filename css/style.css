@@ -306,38 +306,30 @@ img.zoom-img:hover{
   overflow: hidden;
 }
 
+figure h4 {
+    position: relative;
+    padding-top: 10px;
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+    }
+
 /*--Trailers - GAMES--*/
+
 /*--video--*/
-.video iframe {
+.content-grid iframe {
     border: none;
     width: 100%;
     height: 300px;
 }
-.video {
-    background: url(../images/v-bg.jpg) no-repeat 0px 0px;
-    background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
-  -moz-background-size: cover;
-   min-height: 420px;
-    position: relative;
-}
-.video a span{
+
+.content-grid a span{
   background: url(../images/player.png) no-repeat 0px 0px;
   width:65px;
-    height:65px;
-    position: absolute;
-    top: 56%;
-    left: 48%;
+  height:65px;
+  position: absolute;
+  top: 56%;
+  left: 48%;
 }
-h3.tittle.vd {
-    color: #fff;
-    padding-top: 2em;
-}
-
-
-
 
    /*RENT IT*/
 
