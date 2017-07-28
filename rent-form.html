@@ -2,57 +2,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>GamesZone |Contact</title>
+<title>GamesZone |Rent Application Form</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <!-- css -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/vendor/jquery.min.js"></script><!--for nav-bar and toogle -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/form_rent.css" rel="stylesheet" type="text/css" media="all" />  
-<!-- font -->
+<script src="js/vendor/bootstrap.js"></script>
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<script src="js/jquery-1.12.0.min.js"></script>
+ <!-- font -->
 <link href='//fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-
 </head>
-<body> 
+<body>
 
-        <div class="rent-form">
+<div class="sub-banner_rent_form">
+        <!-- Navbar -->
+        <nav class="navbar navbar-default">
             <div class="container">
-                <h2>Contact Us</h2>
-                  <div class="messagepop pop">
-                    <form method="post" id="new_message" action="/messages">
-                      <label for="contact-name"></label>
-                      <input type="text" class="name-con" id="contact-name" name="name" placeholder="Name" onkeyup='validateName()'>
-                      <span class='error-message' id='name-error'></span>
-        
-                      <label for="contact-phone"></label>
-                      <input type="tel" class="tel-con" id="contact-phone" name="phone" placeholder="Telephone number" onkeyup='validatePhone()'>
-                      <span class='error-message' id='phone-error'></span>
-        
-                      <label for="contact-email"></label>
-                      <input type="email" class="email-con" id="contact-email" name="email" placeholder="Email" onkeyup='validateEmail()'>
-                      <span class='error-message' id='email-error'></span>
 
-                      <label for='contactMessage'></label>
-                      <textarea class="contact-area" id='contact-message'  name='message'  placeholder="Enter a message" onkeyup='validateMessage()'></textarea>
-                      <span class='error-message' id='message-error'></span></form><br>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
 
-                      <button onclick='return validateForm()' class="btn btn-default btn-contact">Submit</button>
-                      <span class='error-message' id='submit-error'></span>
-                  </form>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hover_effect"><a href="index.html">Home</a></li>
+                        <li class="hover_effect"><a href="games.html">Games</a></li>
+                        <li class="hover_effect active"><a href="rent.html">Rent</a></li>
+                        <li class="hover_effect"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
 
-                  </div>
             </div>
-                      <div class="clearfix"></div>
+        </nav>
 </div>
-  <!-- Custom scripts -->
-    <script src="js/script.js"></script>  
-    
-  <!-- Scripts vendors-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    
+	<div class="main">
+		<h1>Rent Application Form</h1>
+		<div class="main_grids">
+			<div class="main_grid">
+				<form id="upload" action="#" method="post" enctype="multipart/form-data">
+					<div class="main_grid_left">
+						<div class="main_grid_left_grid">
+							<h3>Register Here :</h3>
+							<input type="email" name="Email" placeholder="Email" required="">
+							<input type="password" name="Password" id="password" placeholder="Password" required="">
+							<input type="password" name="Confirm Password" id="confirm_password" placeholder="Confirm Password" required="">
+							<textarea name="Message" placeholder="Address..." required=""></textarea>
+						</div>
+					</div>
+					<div class="main_grid_left">
+						<h3>Your Details :</h3>
+						<input type="text" name="First Name" placeholder="First Name" required="">
+						<input type="text" name="Last Name" placeholder="Last Name" required="">
+						<div class="main_grid_left_l_grids">
+							<div class="main_grid_left_l">
+								<h2>Rental period</h2>
+							</div>
+							<div class="main_grid_left_r">
+								<div class="radio_button">
+									<label class="radio"><input type="radio" name="radio" checked=""><i></i>ONE WEEK</label>
+								</div>
+								<div class="radio_button">
+									<label class="radio"><input type="radio" name="radio"><i></i>TWO WEEK</label>
+								</div>
+								<div class="clear"> </div>
+							</div>
+							<div class="clear"> </div>
+						</div>
+						<input type="text" name="Phone Number" placeholder="Phone Number" required="">
+						<input class="date" id="datepicker" type="text" value="dd-mm-yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'dd-mm-yyyy';}" required="" >
+					</div>
+					<div class="clear"> </div>
+					<input type="submit" value="Submit Application">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- start-date-piker-->
+		<script src="js/jquery-ui.js"></script>
+		<script>
+			$(function() {
+			$( "#datepicker" ).datepicker();
+			});
+		</script>
+
+<!-- Custom scripts -->
+    <script src="js/script.js"></script>
+
 </body>
 </html>
-            
-           

@@ -1,3 +1,4 @@
+
 /* Styles for dialog window */
 #media-popup,#media-popup2,#media-popup3,#media-popup4,#media-popup5,#media-popup6,#media-popup7{
 	background: #FFF;
@@ -29,7 +30,7 @@
   height: 100%;
   z-index: 1043;
   position: fixed;
-  outline: none !important;
+  outline: none;
   -webkit-backface-visibility: hidden; 
 }
 .mfp-hide {
@@ -92,10 +93,8 @@ button::-moz-focus-inner {
 	#media-popup{
 		padding:15px;
 	}
-	.comments-area input[type="text"], .comments-area textarea{
-	}
 	.mfp-content iframe{
-		width:100%;
+		width:80%;
 		min-height:250px;
 	}
 } 
