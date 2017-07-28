@@ -137,7 +137,7 @@ $(document).ready(function() {
         });
         });
 
-/*password match */
+/*password match*/
 var password = document.getElementById("password")
   , confirm_password = document.getElementById("confirm_password");
 
