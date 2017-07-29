@@ -76,8 +76,8 @@ button::-moz-focus-inner {
     opacity: 1; }
 
 .mfp-close-btn-in .mfp-close {
-  color: #333333; 
- background: #FFF;
+  color: #333; 
+ background: #fff;
   }
 
 .mfp-image-holder .mfp-close,
