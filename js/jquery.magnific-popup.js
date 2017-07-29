@@ -25,8 +25,6 @@ var CLOSE_EVENT = 'Close',
 	READY_CLASS = 'mfp-ready',
 	REMOVING_CLASS = 'mfp-removing',
 	PREVENT_CLOSE_CLASS = 'mfp-prevent-close';
-
-
 /**
  * Private vars
  */
