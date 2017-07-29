@@ -97,7 +97,7 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
 	position: relative;
 	padding: .56em 0;
 	background:#279198;
-	color:#ffffff;
+	color:#fff;
 	text-transform: uppercase;
 }
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position:absolute; top: 23px; }
