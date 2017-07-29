@@ -1,0 +1,23 @@
+{
+  "name": "gameZone",
+  "description": "all about games/rent games",
+  "main": "index.html",
+  "authors": [
+    "crina"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/crinavarlan/GameZone",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.5",
+    "angular-route": "^1.6.5"
+  }
+}
