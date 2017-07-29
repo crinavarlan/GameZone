@@ -80,7 +80,7 @@ function validateForm() {
        return false;
   }
   else {
-
+    return confirm('Do you really want to submit the form?');
   }
 }
 function jsShow(id) {
