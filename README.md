@@ -38,11 +38,14 @@ The user can read the latest news about games, can discover the new releases and
     - I've used **jQuery** library for popup video/popup box, datepicker and for validate the form in "rent it" section.
 - [npm](https://www.npmjs.com/)
     - **npm** is used to help to manage some of the dependencies in the application
+    
+### Testing:
+- JavaScript tested manual and also with Jasmine 
 
  ## Contributing
  
 ### Getting the code up and running
-1. Fork it!
+1. Clone or download it!
 2. Install  **npm** and **bower** 
   * To install **npm** you need to install firstly Node from [here](https://nodejs.org/en/)
   * Run the following command:
