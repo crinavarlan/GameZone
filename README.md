@@ -12,8 +12,9 @@ The user can read the latest news about games, can discover the new releases and
  
 ### Existing Features
 - renting online games
-- registration
 - possibility to contact support
+- news about games
+- possibility to watch trailers
  
 ### Features Left to Implement
 - User Based Features
@@ -23,21 +24,20 @@ The user can read the latest news about games, can discover the new releases and
 	- Creating separate pages for different types of games (adventure, shooter, racing, )
     - Creating individual pages for each gaming console in rent section (PS4, PC, XBox. )
     - create a new section about games reviews
-    -
 
 ### Some the tech used includes:
 - [bower](https://bower.io/)
     - **Bower** is used to manage the installation of our libraries and frameworks
 - [Bootstrap](http://getbootstrap.com/)
-    - **Bootstrap** to give our project a simple, responsive layout
+    - I've used **Bootstrap** - to give a simple and responsive layout to the project
 - [Bootstrap Carousel Plugin](http://getbootstrap.com/)
-    - **Bootstrap Carousel Plugin** for the home page photo slider
+    - I've used **Bootstrap Carousel Plugin** for the home page photo slider
 - [Glyphicons](https://glyphicons.bootstrapcheatsheets.com//)
-    - **Glyphicons** to insert diffrent symbols
+    - I've used **Glyphicons** to insert diffrent symbols
 - [jQuery](https://jquery.com///)
-    - **jQuery** - JavaScript library used for popup video/popup box, datepicker, to validate form in rent application form.
+    - I've used **jQuery** library for popup video/popup box, datepicker and for validate the form in "rent it" section.
 - [npm](https://www.npmjs.com/)
-    - **npm** used to help to manage some of the dependencies in our application
+    - **npm** is used to help to manage some of the dependencies in the application
 
  ## Contributing
  
