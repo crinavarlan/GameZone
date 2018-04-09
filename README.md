@@ -40,7 +40,9 @@ The user can read the latest news about games, can discover the new releases and
     - **npm** is used to help to manage some of the dependencies in the application
     
 ### Testing:
-- JavaScript tested manual and also with Jasmine 
+- JavaScript tested manual
+- CSS and HTML checked with some online validator 
+- The responsive part was tested with blisk browser
 
  ## Contributing
  
