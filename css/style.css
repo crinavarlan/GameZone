@@ -937,8 +937,8 @@ textarea.contact-area{
   }
 }
  @media screen and (max-width: 736px){
-  .carousel-control.left,
-  .carousel-control.right {
+  .carusel-control.left,
+  .carusel-control.right {
   background-image: none;
  }
   .navbar-default .navbar-toggle {
@@ -979,6 +979,7 @@ textarea.contact-area{
     width: 50%;
   }
 }
+
 @media screen and (max-width:667px){
   .callbacks_nav {
     height: 61px;
