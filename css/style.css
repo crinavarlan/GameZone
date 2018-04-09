@@ -171,12 +171,12 @@ img {
    display: block;
    position: relative;
 }
-.view h4 {
+.view h4,h5 {
     text-transform: capitalize;
     color: #fff;
     text-align: center;
     position: relative;
-    font-size: 2.5em;
+    font-size: 1em;
     letter-spacing: 2px;
 }
 .view p {
@@ -315,14 +315,12 @@ img.zoom-img:hover{
   -o-transition-duration: 750ms;
   overflow: hidden;
 }
-
 .gallery-grid h4 {
     position: relative;
     padding: 5px;
     font-size: 1.3em;
     font-weight: 500;
     }
-
 /*--Trailers - GAMES--*/
 /*--video--*/
 .gallery-grid iframe {
@@ -330,7 +328,6 @@ img.zoom-img:hover{
     width: 100%;
     height: 300px;
 }
-
    /*RENT IT*/
 .rent-info-section{
   padding:50px 0px;
@@ -400,7 +397,6 @@ img.zoom-img:hover{
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
 }
-
 /* RENT IT FORM */
 input[type="submit"],a{
   transition:.5s ease-in;
@@ -409,7 +405,6 @@ input[type="submit"],a{
   -o-transition:.5s ease-in;
   -ms-transition:.5s ease-in;
 }
-
 .main{
   position: absolute;
   height: 800px;
