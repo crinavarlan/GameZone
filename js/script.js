@@ -80,8 +80,11 @@ function validateForm() {
        return false;
   }
   else {
-    return confirm('Do you really want to submit the form?');
+    return confirm('Your information has been submitted');
   }
+}
+function resetForm() {
+    document.getElementById("contact-form").reset();
 }
 function jsShow(id) {
   document.getElementById(id).style.display = 'block';
@@ -137,17 +140,3 @@ $(document).ready(function() {
         });
         });
 
-/*password match*/
-var password = document.getElementById("password")
-  , confirm_password = document.getElementById("confirm_password");
-
-function validatePassword(){
-  if(password.value != confirm_password.value) {
-    confirm_password.setCustomValidity("Passwords Don't Match");
-  } else {
-    confirm_password.setCustomValidity('');
-  }
-}
-
-password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;

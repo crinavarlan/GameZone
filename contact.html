@@ -61,7 +61,7 @@
                       <div class="clearfix"></div>
                       </div>
         <div class="form-details">
-            <form> 
+            <form id="contact-form"> 
               <label for="contact-name"></label>
               <input type="text" class="name-con" id="contact-name" name="name" placeholder="Name" onkeyup='validateName()'>
               <span class='error-message' id='name-error'></span>
@@ -77,9 +77,11 @@
               <label for='contactMessage'></label>
               <textarea class="contact-area" id='contact-message'  name='message'  placeholder="Enter a message" onkeyup='validateMessage()'></textarea>
               <span class='error-message' id='message-error'></span></form><br>
-
-              <button onclick='return validateForm()' class="btn btn-default btn-contact">Submit</button>
+              
+              <button onclick='validateForm(); resetForm();' class="btn btn-default btn-contact">Submit</button>
               <span class='error-message' id='submit-error'></span>
+
+
             </form>
                   </div>
                   </div>
