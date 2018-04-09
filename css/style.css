@@ -637,10 +637,10 @@ textarea.contact-area{
     transition: 0.5s all; 
 }
 /*-- FOOTER --*/
-.footer{
+footer{
   padding:35px 0px;
 }
-.footer h4{
+footer h4{
   text-align:left;
   color:#279198;
   font-size:27px;
@@ -987,7 +987,7 @@ textarea.contact-area{
     font-size: 15px;
     margin-left: 5px;
   } 
-  .footer h4 {
+  footer h4 {
     font-size:25px;
   }
   .gallery-grid h4 {
@@ -1018,7 +1018,7 @@ textarea.contact-area{
   .footer-left .glyphicon {
     font-size: 15px;
   }
-  .footer h4 {
+  footer h4 {
     font-size: 24px;
   }
   .item_info ul li {
@@ -1040,7 +1040,7 @@ textarea.contact-area{
   .footer-middle{
     margin:30px 0;
   }
-  .footer h4 {
+  footer h4 {
     margin-bottom: 20px;
   }
   .footer-right h4 {
