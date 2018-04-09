@@ -98,8 +98,6 @@ function producePrompt(message, promptLocation, color) {
   document.getElementById(promptLocation).style.color = color;
 }
 
-
-
 /* popup video in games*/
 $("[data-media]").on("click", function(e) {
     e.preventDefault();
@@ -123,7 +121,6 @@ $(".popup").on("click", function(e) {
 $(".popup > iframe").on("click", function(e) {
     e.stopPropagation();
 });
-
 
 /*pop-up-box */
 $(document).ready(function() {
