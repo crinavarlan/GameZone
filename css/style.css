@@ -25,7 +25,6 @@ body a:hover {
 body a:focus, a:hover {
   text-decoration: none;
 }
-
 h1,h2,h4,h5,h6 {
   margin: 0;
   padding: 0;
@@ -50,7 +49,6 @@ ul, label {
   margin:0;
   padding:0;
 }
-
 a:focus, a:hover {
   text-decoration: none;
   outline: none
